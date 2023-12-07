@@ -21,7 +21,7 @@ const AboutPage = () => {
                                 <div className="flex-fill h-100">
                                     <img src={hangingIcon} alt="" className="hanging-star-icon"/>
                                     <h1 className="text-title mb-2">Viktor Kitanovski</h1>
-                                    <p className="text-desc">I am a San francisco-based product designer with a focus on web design, illustration, a visual development. I have a diverse range of experience having worked across various fields and industries.</p>
+                                    <p className="text-desc">Passionate about the dynamic world of front-end development. Currently, I am expanding my expertise to encompass the full spectrum of web development, delving into the complexities of backend technologies to evolve into a proficient full-stack developer.</p>
                                 </div>
                             </div>
                         </div>

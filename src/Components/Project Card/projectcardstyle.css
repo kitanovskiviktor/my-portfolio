@@ -8,3 +8,8 @@
 .project-card-img-wrapper img {
     border-radius: 14px;
 }
+
+.project-card-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+}

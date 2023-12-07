@@ -3,6 +3,7 @@ import signImage from '../Assets/Images/sign.png';
 import linkIcon from '../Assets/Images/link-icon.svg';
 import { FiLinkedin } from 'react-icons/fi';
 import { TiSocialGithubCircular } from 'react-icons/ti';
+import { Link } from 'react-router-dom';
 
 const HomeLayout = () => {
     return (
@@ -19,7 +20,7 @@ const HomeLayout = () => {
                                     <div className="flex-fill h-100">
                                     <h4 className="text-infos mb-2 text-uppercase">Front End Developer</h4>
                                             <h1 className="text-title mb-2">Viktor Kitanovski</h1>
-                                            <p className="text-desc">I am a Front End Developer based in Macedonia</p>
+                                            <p className="text-desc">Front End Developer based in Macedonia</p>
                                     </div>
                                 </div>
                             </div>
@@ -33,7 +34,7 @@ const HomeLayout = () => {
                                                 <h1 className="text-subtitle mt-2">Credentials</h1> 
                                                 </div>
                                                 <div>
-                                                <img src={linkIcon} alt=""/>
+                                                    <Link to="/credentials"><img src={linkIcon} alt=""/></Link>
                                                </div>
                                         </div>
                                     </div>
@@ -47,7 +48,7 @@ const HomeLayout = () => {
                                                 <h1 className="text-subtitle mt-2">Projects</h1>
                                                 </div>
                                                <div>
-                                                <img src={linkIcon} alt=""/>
+                                               <Link to="/works"><img src={linkIcon} alt=""/></Link>
                                                </div>
                                         </div>
                                     </div>
@@ -79,11 +80,11 @@ const HomeLayout = () => {
                                             <p className='text-desc text-uppercase size-12'>Years Experience</p>
                                         </div>
                                         <div className="client-info-wrapper">
-                                            <h2 className="light-blue mb-3">12</h2>
-                                            <p className='text-desc text-uppercase size-12'>CLIENTS WORLDWIDE</p>
+                                            <h2 className="light-blue mb-3">04</h2>
+                                            <p className='text-desc text-uppercase size-12'>CLIENTS</p>
                                         </div>
                                         <div className="client-info-wrapper">
-                                            <h2 className="light-blue mb-3">07</h2>
+                                            <h2 className="light-blue mb-3">04</h2>
                                             <p className='text-desc text-uppercase size-12'>TOTAL PROJECTS</p>
                                         </div>
                                     </div>
@@ -100,7 +101,7 @@ const HomeLayout = () => {
                                                 <h1 className="text-subtitle mt-2">Socials</h1>
                                                 </div>
                                                <div>
-                                                <img src={linkIcon} alt=""/>
+                                                <Link to="/contact"><img src={linkIcon} alt=""/></Link>
                                                </div>
                                         </div>
                                     </div>

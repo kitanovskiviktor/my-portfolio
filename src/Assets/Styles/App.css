@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: #f7f9fc;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+.light-grey {
+    color: #676767;
+}
+
+.dark-grey {
+    color: #323232;
+}
+
+.light-blue {
+    color: #5B78F6;
+}
+
+.dark-color {
+    color: #323232;
+}
+
+.active {
+    color: #5B78F6;
+}
+
+.text-infos {
+    color: #BCBCBC;
+    opacity: 0.7;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    margin-bottom: 3px;
+}
+
+.text-title {
+    font-size: 36px;
+    line-height: 40px;
+    color: #0F0F0F;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.text-desc {
+    color: #BCBCBC;
+    font-size: 14px;
+}
+
+.text-subtitle {
+    font-size: 20px;
+    color: #0F0F0F;
+    font-weight: 500;
+}
+
+.wiget-box {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 50px 46px;
+}
+
+.size-12 {
+    font-size: 12px;
+}
+
+.size-14 {
+    font-size: 14px;
+}
+
+.size-15 {
+    font-size: 15px;
+}
+
+.size-16 {
+    font-size: 16px;
+}
+
+.size-18 {
+    font-size: 18px;
+}
+
+.size-22 {
+    font-size: 22px;
+}
+
+.padding-24 {
+    padding: 24px;
+}
+
+.hanging-star-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
