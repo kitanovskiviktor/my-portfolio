@@ -1,6 +1,12 @@
 import indianMockup from '../../Assets/Images/indian-mockup.png';
 import rikromMockup from '../../Assets/Images/rikrom-mockup.png';
 import selectiveMockup from '../../Assets/Images/selective-mockup.png';
+import alfaMockup from '../../Assets/Images/alfa-mockup.png';
+
+import projectIndian from '../../Assets/Images/project_indian.png';
+import projectRikrom from '../../Assets/Images/project_rikrom.png';
+import projectSelective from '../../Assets/Images/project_selective.png';
+import projectAlfa from '../../Assets/Images/project_alfa.png';
 
 export const experienceData = [
     {
@@ -23,23 +29,19 @@ export const educationData = [
 export const skillsData = [
     {
         id: 1,
-        title: 'HTML',
-    },
-    {
-        id: 2,
-        title: 'CSS',
-    },
-    {
-        id: 3,
-        title: 'JavaScript',
-    },
-    {
-        id: 4,
         title: 'React',
     },
     {
-        id: 5,
+        id: 2,
+        title: 'JavaScript',
+    },
+    {
+        id: 3,
         title: 'Bootstrap',
+    },
+    {
+        id: 4,
+        title: 'HTML / CSS',
     },
 ]
 
@@ -66,21 +68,97 @@ export const achievementsData = [
 
 export const projectsData = [
     {
-        id: 1,
-        desc: `Front End`,
+        id: "1",
+        desc: `Web Design and Development`,
         title: `Indian Motorcycle MK`,
-        img: indianMockup
+        img: indianMockup,
+        mainImage: projectIndian,
+        description: `Indian Motorcycle Company has been in business since 1901. This organisation manufactures and sells motorcycles. My objective in this project was to boost their digital presence in Macedonia by developing a website showcasing their motorcycles and accessories. The usage of React as a technology provided the website with a solid core structure and look, resulting in an appealing user experience.`,
+        tools: [
+            {
+                name: "React",
+            },
+            {
+                name: "Bootstrap",
+            },
+            {
+                name: "HTML / CSS",
+            }
+        ],
+        year: "2023",
+        client: "Indian Motorcycle",
+        service: "Web Design and Development",
+        link: "indianmotorcycle.mk"
     },
     {
-        id: 2,
-        desc: `Front End`,
+        id: "2",
+        desc: `Web Design and Development`,
         title: `Rikrom MK`,
-        img: rikromMockup
+        img: rikromMockup,
+        mainImage: projectRikrom,
+        description: `Rikrom is a food production and commerce enterprise with many years of experience.
+        Their goal was to build a website where their wholesale customers could order merchandise. The customer gets complete access to his planned products for order by using the cart, which he can delete or update.
+        With React as the dominant technology, all website capabilities and visibility are set.`,
+        tools: [
+            {
+                name: "React",
+            },
+            {
+                name: "Bootstrap",
+            },
+            {
+                name: "HTML / CSS",
+            }
+        ],
+        year: "2023",
+        client: "Rikrom",
+        service: "Web Design and Development",
+        link: "rikrom.mk"
     },
     {
-        id: 3,
-        desc: `Front End`,
+        id: "3",
+        desc: `Web Design and Development`,
         title: `Selective Professional MK`,
-        img: selectiveMockup
-    }
+        img: selectiveMockup,
+        mainImage: projectSelective,
+        description: `Selective Professional is a hairdressing salon as well as a provider of hairdressing products to other businesses.
+        I exposed the organisation to the digital market by creating a visually beautiful and user-centric website with React. The site seeks to engage users and drive informed purchases by emphasising interactive displays and thorough product descriptions. `,
+        tools: [
+            {
+                name: "React",
+            },
+            {
+                name: "Bootstrap",
+            },
+            {
+                name: "HTML / CSS",
+            }
+        ],
+        year: "2023",
+        client: "Selective Professional",
+        service: "Web Design and Development",
+        link: "selectiveprofessional.mk"
+    },
+    {
+        id: "4",
+        desc: `Web Design`,
+        title: `Driving School Alfa`,
+        img: alfaMockup,
+        mainImage: projectAlfa,
+        description: `Alfa is a driving school in Skopje that plans to go fully online with its own website where future drivers can learn about their services.
+        The website offers excellent visibility in the competitive driving school industry by employing strategic SEO approaches, attracting a wide audience seeking quality driving education.`,
+        tools: [
+            {
+                name: "Bootstrap"
+            },
+            {
+                name: "HTML / CSS",
+            }
+        ],
+        year: "2022",
+        client: "Driving School Alfa",
+        service: "Web Design",
+        link: "avtoskolaalfa.mk"
+    },
+
 ]

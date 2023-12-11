@@ -7,21 +7,26 @@ const Navigation = () => {
 
     return (
         <>
-        <header>
-            <nav className="container pt-4 navigation-section">
-                <div className="row">
-                    <ul className="d-flex justify-content-between align-items-center">
-                        <li><img src={logo} alt='' className="nav-logo"/></li>
-                        <ul className="d-flex gap-5">
-                            <li className="active"><Link to="/">Home</Link></li>
-                            <li><Link to="/about">About</Link></li>
-                            <li><Link to="/works">Works</Link></li>
-                            <li><Link to="/contact">Contact</Link></li>
-                        </ul>
-                        <li><Button text="Let's talk"/></li>
-                    </ul>
+      <header>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="container justify-content-around">
+                <Link to="/" className="navbar-brand"><img src={logo} alt='' className="nav-logo"/></Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div className="navbar-nav justify-content-between align-items-center w-100">
+                    <div className='nav-items-list'>
+                        <Link to="/" className='active'>Home</Link>
+                        <Link to="/about">About</Link>
+                        <Link to="/works">Works</Link>
+                        <Link to="/contact">Contact</Link>
+                    </div>
+                    <Link to="/contact"><Button text="Let's talk"/></Link>
                 </div>
-            </nav>
+                </div>
+            </div>
+        </nav>
         </header>
 
         </>

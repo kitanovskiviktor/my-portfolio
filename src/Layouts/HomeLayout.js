@@ -13,7 +13,7 @@ const HomeLayout = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6">
-                                <div className="wiget-box d-flex gap-5 align-items-center">
+                                <div className="wiget-box d-flex gap-5 align-items-center main-home-box">
                                     <div className="flex-fill box-img-wrapper h-100">
                                         <img className="w-100" alt="" src={image}></img>
                                     </div>
@@ -74,14 +74,14 @@ const HomeLayout = () => {
                                     </div>
                             </div>
                             <div className="col-md-6">
-                                    <div className="wiget-box d-flex align-items-center padding-24 text-center gap-4">
+                                    <div className="wiget-box d-flex align-items-center padding-24 text-center gap-4 home-info-box">
                                         <div className="client-info-wrapper">
                                             <h2 className="light-blue mb-3">1</h2>
                                             <p className='text-desc text-uppercase size-12'>Years Experience</p>
                                         </div>
                                         <div className="client-info-wrapper">
                                             <h2 className="light-blue mb-3">04</h2>
-                                            <p className='text-desc text-uppercase size-12'>CLIENTS</p>
+                                            <p className='text-desc text-uppercase size-12'>Total Clients</p>
                                         </div>
                                         <div className="client-info-wrapper">
                                             <h2 className="light-blue mb-3">04</h2>
@@ -92,8 +92,8 @@ const HomeLayout = () => {
                             <div className="col-md-3">
                                     <div className="wiget-box d-flex align-items-center flex-column padding-24">
                                         <div className="client-info-wrapper d-flex w-100 justify-content-around">
-                                            <FiLinkedin className='home-social-icon'/>
-                                            <TiSocialGithubCircular className='home-social-icon mx-3'/>
+                                            <Link to="https://www.linkedin.com/in/viktor-kitanovski-99513b163/"><FiLinkedin className='home-social-icon'/></Link>
+                                            <Link to="https://github.com/kitanovskiviktor"><TiSocialGithubCircular className='home-social-icon mx-3'/></Link>
                                         </div>
                                         <div className="flex-fill h-100 w-100 d-flex justify-content-between mt-2">
                                                 <div>

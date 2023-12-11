@@ -41,6 +41,7 @@ body {
 
 .light-blue {
     color: #5B78F6;
+    /* color: #8fe69c; */
 }
 
 .dark-color {
@@ -49,6 +50,7 @@ body {
 
 .active {
     color: #5B78F6;
+    font-weight: bold;
 }
 
 .text-infos {
@@ -116,4 +118,42 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 991px) {
+
+    .main-home-box {
+       margin-bottom: 20px;
+       flex-direction: column;
+    }
+
+    .home-info-box {
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contact-page-conntainer .row .col-md-5 > div {
+        margin-bottom: 40px;
+    }
+
+    .wiget-box {
+        margin-bottom: 20px;
+    }
+
+    .project-widget-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .project-about-container .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
 }

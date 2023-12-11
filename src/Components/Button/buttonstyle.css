@@ -1,15 +1,16 @@
 .button {
-    background: #0f0f0f;
+    background: #5B78F6;
+    padding: 8px 16px;
     color: #fff;
+    border: 2px solid #211808;
+    box-shadow: 2px 2px #211808;
+    border-radius: 8px;
     transition: .3s;
-    border-radius: 16px;
     font-size: 16px;
     font-weight: 500;
-    padding: 10px 30px;
-    border: none;
-    outline: none;
 }
 
 .button:hover {
     background-color: #5B78F6;
+    color: #8fe69c;
 }

@@ -12,6 +12,8 @@ import CredentialsPage from './Pages/Credentials/CredentialsPage';
 import WorksPage from './Pages/Works Page/WorksPage';
 import ProjectPage from './Pages/Project Page/ProjectPage';
 import ContactPage from './Pages/Contact Page/ContactPage';
+import AdminPanel from './Pages/Admin Panel/AdminPanel';
+import Login from './Pages/Login/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -33,12 +35,20 @@ const router = createBrowserRouter([
     element: <WorksPage/>
   },
   {
-    path: "/project",
+    path: "/project/:id",
     element: <ProjectPage/>
   },
   {
     path: "/contact",
     element: <ContactPage/>
+  },
+  {
+    path: "/admin-panel",
+    element: <AdminPanel/>
+  },
+  {
+    path: "/login",
+    element: <Login/>
   }
 ]);
 

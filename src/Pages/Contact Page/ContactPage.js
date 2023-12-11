@@ -2,8 +2,17 @@ import Navigation from "../../Components/Navigation/Navigation";
 import '../../Assets/Styles/contactpagestyle.css';
 import Button from "../../Components/Button/Button";
 import Footer from "../../Components/Footer/Footer";
+import { sendEmail } from "../../Utils/appFunctions/appFunctions";
+import { useRef } from "react";
+
 
 const ContactPage = () => {
+
+    const nameRef = useRef();
+    const emailRef = useRef();
+    const subjectRef = useRef();
+    const messageRef = useRef();
+
     return (
         <>
             <Navigation/>
@@ -36,11 +45,11 @@ const ContactPage = () => {
                         <div className="col-md-7">
                             <div className="bg-white">
                                 <h1>Let's work <span className="light-blue">together</span></h1>
-                                <input placeholder="Your Name *" className="contact-page-input mt-3"/>
-                                <input placeholder="Your Email *" className="contact-page-input mt-3"/>
-                                <input placeholder="Your Subject *" className="contact-page-input mt-3"/>
-                                <textarea placeholder="Your Message *" className="contact-page-input mt-3"></textarea>
-                                <Button text="Send Message" classes="mt-4 d-block mx-auto"/>
+                                <input placeholder="Your Name *" className="contact-page-input mt-3" ref={nameRef}/>
+                                    <input placeholder="Your Email *" className="contact-page-input mt-3" ref={emailRef}/>
+                                    <input placeholder="Your Subject *" className="contact-page-input mt-3" ref={subjectRef}/>
+                                    <textarea placeholder="Your Message *" className="contact-page-input mt-3" ref={messageRef}></textarea>
+                                    <Button text="Send Message" classes="mt-4 d-block mx-auto"/>
                             </div>
                         </div>
                     </div>

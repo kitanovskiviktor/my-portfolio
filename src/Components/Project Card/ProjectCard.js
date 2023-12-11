@@ -15,7 +15,7 @@ const ProjectCard = ({props}) => {
                         <h1 className='size-18 mt-2'>{props.title}</h1>
                     </div>
                     <div>
-                        <Link to="/works"><img src={linkIcon} alt=""/></Link>
+                        <Link to={`/project/${props.id}`}><img src={linkIcon} alt=""/></Link>
                     </div>
                 </div>
             </div>

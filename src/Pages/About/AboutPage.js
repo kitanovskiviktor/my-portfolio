@@ -21,7 +21,7 @@ const AboutPage = () => {
                                 <div className="flex-fill h-100">
                                     <img src={hangingIcon} alt="" className="hanging-star-icon"/>
                                     <h1 className="text-title mb-2">Viktor Kitanovski</h1>
-                                    <p className="text-desc">Passionate about the dynamic world of front-end development. Currently, I am expanding my expertise to encompass the full spectrum of web development, delving into the complexities of backend technologies to evolve into a proficient full-stack developer.</p>
+                                    <p className="size-15">Passionate about the dynamic world of front-end development, I am currently focused on expanding my expertise to encompass the full spectrum of web development. My goal is to delve deeper into the complexities of front-end technologies, honing my skills and advancing towards becoming a proficient full-stack developer with a primary emphasis on the intricacies of front-end development.</p>
                                 </div>
                             </div>
                         </div>

@@ -1,30 +1,48 @@
 import Navigation from "../../Components/Navigation/Navigation";
-import testImage from '../../Assets/Images/projecttest.png';
 import '../../Assets/Styles/projectpagestyle.css';
 import Footer from "../../Components/Footer/Footer";
+import { useParams } from "react-router";
+import { useEffect, useState } from "react";
+import { projectsData } from "../../Utils/Data/dataConfig";
+import { Link } from "react-router-dom";
 
 const ProjectPage = () => {
+
+    const { id } = useParams();
+
+    const [projectData, setProjectData] = useState([]);
+
+    useEffect(() => {
+        setProjectData(projectsData.find((item) => item.id === id));
+    }, [id]);
+
+    if(!projectData) {
+        return null;
+    }
+    
+
     return (
         <>
             <Navigation/>
             <main>
                 <section className="container pt-5 pb-5">
-                    <img src={testImage} alt="" className="project-main-image"></img>
-                    <h3 className="mt-5 text-center fw-bold">Indian Motorcycle MK</h3>
+                    <img src={projectData.mainImage} alt="" className="project-main-image"></img>
+                    <h3 className="mt-5 text-center fw-bold">{projectData.title}</h3>
                 </section>
 
                 <section className="container pb-5 project-about-container">
                     <div className="row">
-                        <div className="col-md-6">
-                            <div className="project-widget-wrapper">
-                                <h3>Indian Motorcycle MK</h3>
-                                <p className="text-infos">Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci sagittis eu volutpat odio facilisis mauris sit.</p>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
+                        <div className="col-md-12">
                             <div className="project-widget-wrapper">
                                 <h3>About</h3>
-                                <p className="text-infos">Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci sagittis eu volutpat odio facilisis mauris sit.</p>
+                                <p>{projectData.description}</p>
+                                <ul className="mt-4">
+                                    {
+                                        projectData.tools&&projectData.tools.map((item) => (
+                                            <li style={{listStyle: "circle"}}>{item.name}</li>
+                                        ))
+                                    }
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -35,25 +53,25 @@ const ProjectPage = () => {
                         <div className="col-md-3">
                             <div className="project-widget-wrapper text-center">
                                <h3>Year</h3>
-                               <p className="light-blue fw-bold">2023</p>
+                               <p className="light-blue fw-bold">{projectData.year}</p>
                             </div>
                         </div>
                         <div className="col-md-3">
                         <div className="project-widget-wrapper text-center">
                                <h3>Client</h3>
-                               <p className="light-blue fw-bold">Indian Motorcycle</p>
+                               <p className="light-blue fw-bold">{projectData.client}</p>
                             </div>
                         </div>
                         <div className="col-md-3">
                         <div className="project-widget-wrapper text-center">
                                <h3>Service</h3>
-                               <p className="light-blue fw-bold">Web Development</p>
+                               <p className="light-blue fw-bold">{projectData.service}</p>
                             </div>
                         </div>
                         <div className="col-md-3">
                             <div className="project-widget-wrapper text-center">
                                <h3>Link</h3>
-                               <p className="light-blue fw-bold">indianmotorcycle.mk</p>
+                               <Link to={`https://${projectData.link}`}><p className="light-blue fw-bold">{projectData.link}</p></Link>
                             </div>
                         </div>
                     </div>
