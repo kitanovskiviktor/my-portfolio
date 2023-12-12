@@ -1,5 +1,9 @@
+.navbar {
+    border-bottom: 1px solid #211808;
+}
+
 .nav-logo {
-    max-width: 100px;
+    max-width: 80px;
 }
 
 .nav-items-list {
