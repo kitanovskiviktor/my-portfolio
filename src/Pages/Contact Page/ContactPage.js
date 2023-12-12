@@ -45,11 +45,19 @@ const ContactPage = () => {
                         <div className="col-md-7">
                             <div className="bg-white">
                                 <h1>Let's work <span className="light-blue">together</span></h1>
-                                <input placeholder="Your Name *" className="contact-page-input mt-3" ref={nameRef}/>
+                                <form>
+                                    <input placeholder="Your Name *" className="contact-page-input mt-3" ref={nameRef}/>
                                     <input placeholder="Your Email *" className="contact-page-input mt-3" ref={emailRef}/>
                                     <input placeholder="Your Subject *" className="contact-page-input mt-3" ref={subjectRef}/>
                                     <textarea placeholder="Your Message *" className="contact-page-input mt-3" ref={messageRef}></textarea>
-                                    <Button text="Send Message" classes="mt-4 d-block mx-auto"/>
+                                    <Button text="Send Message" classes="mt-4 d-block mx-auto" 
+                                    onClick={() => sendEmail(
+                                        nameRef.current.value,
+                                        emailRef.current.value,
+                                        subjectRef.current.value,
+                                        messageRef.current.value
+                                    )}/>
+                                </form>
                             </div>
                         </div>
                     </div>
