@@ -24,7 +24,8 @@ li {
 }
 
 body {
-    background-color: #f7f9fc;
+    /* background-color: #f7f9fc; */
+    background-color: #f3f3f3;
 }
 
 .container {
@@ -54,8 +55,8 @@ body {
 }
 
 .text-infos {
-    color: #BCBCBC;
-    opacity: 0.7;
+    color: #858585;
+    /* opacity: 0.7; */
     font-size: 14px;
     letter-spacing: 0.3px;
     margin-bottom: 3px;
@@ -70,7 +71,7 @@ body {
 }
 
 .text-desc {
-    color: #BCBCBC;
+    color: #858585;
     font-size: 14px;
 }
 
