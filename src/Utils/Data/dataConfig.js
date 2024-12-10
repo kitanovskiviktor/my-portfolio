@@ -8,6 +8,12 @@ import projectRikrom from '../../Assets/Images/project_rikrom.png';
 import projectSelective from '../../Assets/Images/project_selective.png';
 import projectAlfa from '../../Assets/Images/project_alfa.png';
 
+import reactLogo from '../../Assets/Images/react-logo.png';
+import javascriptLogo from '../../Assets/Images/javascript-logo.png';
+import javaLogo from '../../Assets/Images/java-logo.png';
+import cLogo from '../../Assets/Images/c-logo.png';
+import sqlLogo from '../../Assets/Images/sql-logo.png';
+
 export const experienceData = [
     {
         id: 1,
@@ -29,20 +35,29 @@ export const educationData = [
 export const skillsData = [
     {
         id: 1,
-        title: 'React',
+        name: 'React',
+        image: reactLogo,
     },
     {
         id: 2,
-        title: 'JavaScript',
+        name: "Javascript",
+        image: javascriptLogo,
     },
     {
         id: 3,
-        title: 'Bootstrap',
+        name: "Java",
+        image: javaLogo
     },
     {
         id: 4,
-        title: 'HTML / CSS',
+        name: "C++",
+        image: cLogo
     },
+    {
+        id: 5,
+        name: "SQL",
+        image: sqlLogo
+    }
 ]
 
 export const achievementsData = [
@@ -88,7 +103,7 @@ export const projectsData = [
         year: "2023",
         client: "Indian Motorcycle",
         service: "Web Design and Development",
-        link: "indianmotorcycle.mk"
+        link: "https://www.indianmotorcycle.mk"
     },
     {
         id: "2",
@@ -113,7 +128,7 @@ export const projectsData = [
         year: "2023",
         client: "Rikrom",
         service: "Web Design and Development",
-        link: "rikrom.mk"
+        link: "https://www.rikrom.mk"
     },
     {
         id: "3",
@@ -137,7 +152,7 @@ export const projectsData = [
         year: "2023",
         client: "Selective Professional",
         service: "Web Design and Development",
-        link: "selectiveprofessional.mk"
+        link: "https://www.selectiveprofessional.mk"
     },
     {
         id: "4",
@@ -158,7 +173,7 @@ export const projectsData = [
         year: "2022",
         client: "Driving School Alfa",
         service: "Web Design",
-        link: "avtoskolaalfa.mk"
+        link: "https://www.avtoskolaalfa.mk"
     },
 
 ]

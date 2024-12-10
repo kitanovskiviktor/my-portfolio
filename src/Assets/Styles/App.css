@@ -24,8 +24,7 @@ li {
 }
 
 body {
-    /* background-color: #f7f9fc; */
-    background-color: #f3f3f3;
+   background-color: #2f2f2f;
 }
 
 .container {
@@ -33,7 +32,7 @@ body {
 }
 
 .light-grey {
-    color: #676767;
+    color: #cbcace;
 }
 
 .dark-grey {
@@ -46,7 +45,15 @@ body {
 }
 
 .dark-color {
-    color: #323232;
+    color: #181818;
+}
+
+.dark-color-bg {
+    background-color: #181818;
+}
+
+.border-radius-20 {
+    border-radius: 20px;
 }
 
 .active {
@@ -55,7 +62,7 @@ body {
 }
 
 .text-infos {
-    color: #858585;
+    color: #78cc6d;
     /* opacity: 0.7; */
     font-size: 14px;
     letter-spacing: 0.3px;
@@ -65,24 +72,24 @@ body {
 .text-title {
     font-size: 36px;
     line-height: 40px;
-    color: #0F0F0F;
+    color: white;
     font-weight: 500;
     margin-bottom: 12px;
 }
 
 .text-desc {
-    color: #858585;
+    color: #78cc6d;
     font-size: 14px;
 }
 
 .text-subtitle {
     font-size: 20px;
-    color: #0F0F0F;
+    color: white;
     font-weight: 500;
 }
 
 .wiget-box {
-    background-color: #fff;
+    background-color: #181818;
     border-radius: 30px;
     padding: 50px 46px;
 }
@@ -154,7 +161,4 @@ body {
         flex-direction: column;
         align-items: center;
     }
-
-
-
 }

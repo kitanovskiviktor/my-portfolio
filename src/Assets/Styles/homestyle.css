@@ -1,10 +1,11 @@
-.box-img-wrapper {
-    width: 220px;
-    height: 220px;
-}
 
 .box-img-wrapper img {
-    border-radius: 50%;
+    height: 280px;
+    border-radius: 20px 0 20px 20px;
+}
+
+.main-home-box {
+    background-color: #181818;
 }
 
 .client-info-wrapper {
@@ -17,4 +18,40 @@
 .home-social-icon {
     font-size: 30px;
     color: #5B78F6;
+}
+
+.fa-brands {
+    line-height: 0;
+}
+
+.social-icon-wrapper i {
+    font-size: 20px;
+    color: white;
+    line-height: 0;
+}
+.social-icon-wrapper > div{
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 12px;
+    padding: 10px 14px;
+}
+
+.technology-card, .project-card {
+    border-radius: 20px;
+    background: linear-gradient(120deg, rgba(255, 255, 255, .02), rgba(0, 0, 0, .2));
+    border: 1px solid rgba(255, 255, 255, .12);
+}
+
+.project-btn {
+    background-color: #78cc6d;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.contact-icon-wrapper i {
+    font-size: 26px;
+    color: #78cc6d;
 }
